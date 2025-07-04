@@ -1,0 +1,21 @@
+import React from 'react';
+import HeroSection from './components/HeroSection';
+import CharacterShowcase from './components/CharacterShowcase';
+import RitualScene from './components/RitualScene';
+import FinalBattle from './components/FinalBattle';
+
+const App = () => {
+  return (
+    <div className="bg-black text-white font-sans">
+      <audio autoPlay loop volume="0.4">
+        <source src="/bg-music.mp3" type="audio/mpeg" />
+      </audio>
+      <HeroSection />
+      <CharacterShowcase />
+      <RitualScene />
+      <FinalBattle />
+    </div>
+  );
+};
+
+export default App;
